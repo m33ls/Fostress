@@ -1,0 +1,41 @@
+{% block sidebar %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+       
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right">
+    {% if user.is_authenticated %}
+    <div class="card my-4">
+        <div class="card-body">
+            <center>
+                <a class="btn btn-primary" href="/posts/add/" style="margin: 5px; width: 90%; background-color: #fd0d6e; outline: none; border: none;">Add a Post</a>
+                </center>
+        </div>
+    </div>
+    {% endif %}
+    {% if not user.is_authenticated %}
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="card-text">Welcome to the future of Social Media</p>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body text-center" style="background-color: #fd0d6e; border-radius:10px;">
+            <p class="card-text" style="color:white">Create an account</p>
+            <a class="btn btn-primary" href="/accounts/signup" style="margin: 5px; width: 75%; outline:none; border:none; background-color: white; color: #fd0d6e;">Sign Up</a>
+        </div>
+    </div>
+    {% endif %}
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="card-text">Fostress is a social platform with the goal of gaining a deeper understanding of the impact of social media on mental health. Designed with simplicity and privacy at the forefront, it doesn't collect unnecessary user data.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock sidebar %}

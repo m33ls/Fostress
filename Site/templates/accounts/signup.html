@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <center>
+    <div class="mb-4" style="width: 20%;">
+        <form action="/accounts/signup/" method="post">
+            {% csrf_token %}
+            {% for field in form %}
+
+        <p>
+            <div style="width: 75%;">
+            <!--field.label_tag }}-->
+            {{ field }}
+            <!--% if field.help_text %
+                <small style="color: grey"><br/>{ field.help_text }</small>
+            % endif % -->
+            {% for error in field.errors %}
+                <p style="color: red">{{ error }}</p>
+            {% endfor %}
+            </div>
+        </p>
+
+        {% endfor %}
+
+            <input type="submit" class="btn btn-primary" value="Sign up" style="width:75%; background-color: #fd0d6e; outline: none; border: none;">
+        </form>
+    </div>
+    </center> 
+    <center>
+    <div class="mb-4" style="width: 20%;">
+        <div>Already have an account? <a href="/accounts/login" style="color: #fd0d6e;">Log in</a></div>
+    </div>
+    </center>
+    
+{% endblock content %}
