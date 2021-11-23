@@ -16,6 +16,12 @@ This app is based on Python with Django and SQLite.
 * User Sign In & Signup
 * Support for both text and image posts
 
+![](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-signup.gif?raw=true)
+![](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-login.gif?raw=true)
+![](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-imagepost.png?raw=true)
+![](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-textpost.png?raw=true)
+
+
 ## To Do
 * Add support for comments
 * Add user profile pictures
