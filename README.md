@@ -16,5 +16,9 @@ This app is based on Python with Django and SQLite.
 * User Sign In & Signup
 * Support for both text and image posts
 
+## To Do
+* Add support for comments
+* Add user profile pictures
+
 ## License
 This project is licensed under the [Apache 2.0 License](https://github.com/ameliiams/Fostress/blob/main/LICENSE)
