@@ -33,6 +33,17 @@
             box-shadow: 0 16px 48px #E3E7EB;
             padding-top: 10px;
         }
+        .btn-primary {
+           background-color: #fd0d6e;
+           outline: none; 
+           border: none;
+       }
+
+       .btn-primary:hover {
+           background-color: #fd0d6e;
+           outline: none; 
+           border: none;
+       }
     </style>
 
         <!-- Navigation -->
@@ -49,15 +60,15 @@
                         <li class="nav-item text-black">
                             <form action="{% url 'accounts:logout' %}" method="post">
                                 {% csrf_token %}
-                                <button class="btn btn-primary" type="submit" style="margin: 5px; width: 80px; background-color: #fd0d6e; outline: none; border: none;">Log Out</button>
+                                <button class="btn btn-primary" type="submit" style="margin: 5px; width: 80px;">Log Out</button>
                             </form>
                         </li>
                         {% else %}
                         <li class="nav-item text-black">
-                            <a class="btn btn-primary" href="/accounts/signup" style="margin: 5px; width: 80px; background-color: #fd0d6e; outline: none; border: none;">Sign Up</a>
+                            <a class="btn btn-primary" href="/accounts/signup" style="margin: 5px; width: 80px;">Sign Up</a>
                         </li>
                         <li class="nav-item text-black">
-                            <a class="btn btn-primary" href="/accounts/login" style="margin: 5px; width: 80px; background-color: #fd0d6e; outline: none; border: none;">Log in</a>
+                            <a class="btn btn-primary" href="/accounts/login" style="margin: 5px; width: 80px;">Log in</a>
                         </li>
                         {% endif %}
                     </ul>

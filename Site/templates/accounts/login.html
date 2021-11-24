@@ -2,32 +2,32 @@
 {% load static %}
 
 {% block content %}
-    <center>
-    <div class="mb-4" style="width: 20%;">
-        
-        <form action="{% url 'accounts:login' %}" method="post">
-            {% csrf_token %}
-            {% for field in form %}
+<center>
+<div class="mb-4" style="width: 20%;">
+    <form action="{% url 'accounts:login' %}" method="post">
+        {% csrf_token %}
+        {% for field in form %}
 
-        <p>
-            <div style="width: 75%;">
-            <!--field.label_tag-->
-            {{ field }}
-            {% if field.help_text %}
-                <small style="color: grey">{{ field.help_text }}</small>
-            {% endif %}
-            {% for error in field.errors %}
-                <p style="color: red">{{ error }}</p>
-            {% endfor %}
-            </div>
-        </p>
-
+    <p>
+        <div style="width: 75%;">
+        <!--field.label_tag-->
+        {{ field }}
+        {% if field.help_text %}
+            <small style="color: grey">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+            <p style="color: red">{{ error }}</p>
         {% endfor %}
-            <input type="submit" class="btn btn-primary" value="Log In" style="width:75%; background-color: #fd0d6e; outline: none; border: none;">
-        </form>
-    </div>
-    <div class="mb-4" style="width: 20%;">
-        <div>New user? <a href="/accounts/signup" style="color: #fd0d6e;">Sign up</a></div>
-    </div>
-    </center>
+        </div>
+    </p>
+
+    {% endfor %}
+    
+        <input type="submit" class="btn btn-primary" value="Log In" style="width:75%;">
+    </form>
+</div>
+<div class="mb-4" style="width: 20%;">
+    <div>New user? <a href="/accounts/signup" style="color: #fd0d6e;">Sign up</a></div>
+</div>
+</center>
 {% endblock content %}

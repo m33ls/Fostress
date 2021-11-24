@@ -21,7 +21,7 @@
         <!-- Post Entries Column -->
         <div class="col-md-7 mt-3 left">
             {% for post in post_list %}
-            <div class="card mb-4">
+            <div class="card mb-4" style="border-radius: 20px;">
                 <div class="card-body">
                     <div class="username"> <!-- add the profile picture here --> <b>{{ post.post_author }}</b></div>
                     <img class="card-img-top" src="{{post.image}}" width=100%>
@@ -32,6 +32,11 @@
                 </div>
             </div>
             {% endfor %}
+            <div class="mb-4">
+                <div class="card-body">
+                    <center>End of list. <a href="/posts" style="color: #fd0d6e;">Reload</a></center>
+                </div>
+            </div>
         </div>
         {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
