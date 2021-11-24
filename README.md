@@ -13,7 +13,8 @@ A free open-source social platform that was built with the goal of gaining a dee
 This app is based on Python with Django and SQLite. 
 
 ## Features
-* User Sign In & Signup
+* Easy setup
+* Supports user sign in & sign up
 * Support for both text and image posts
 
 ## Get Started
@@ -54,8 +55,9 @@ fostress/Fostress/site/manage.py runserver
 
 
 ## To Do
-* Add support for comments
-* Add user profile pictures
+- [ ] Add support for comments
+- [ ] Add user profile pictures
+- [ ] Add page for user settings
 
 ## License
 This project is licensed under the [Apache 2.0 License](https://github.com/ameliiams/Fostress/blob/main/LICENSE)
