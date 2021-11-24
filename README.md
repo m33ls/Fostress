@@ -8,7 +8,7 @@
 </a>
 </p>
 
-A free, open-source social platform that was built with the goal of gaining a deeper understanding of the impact of social media on mental health. 
+A free open-source social platform that was built with the goal of gaining a deeper understanding of the impact of social media on mental health. 
 
 This app is based on Python with Django and SQLite. 
 
@@ -16,10 +16,41 @@ This app is based on Python with Django and SQLite.
 * User Sign In & Signup
 * Support for both text and image posts
 
-![](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-signup.gif?raw=true)
-![](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-login.gif?raw=true)
-![](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-imagepost.png?raw=true)
-![](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-textpost.png?raw=true)
+## Get Started
+
+First, create a virtual environment 
+
+``` 
+# Unix / MacOS
+python3 -m venv fostress
+source fostress/Scripts/activate
+```
+
+``` 
+# Windows
+python3 -m venv fostress
+fostress/Scripts/activate.bat
+```
+Then, clone the project repository
+```
+git clone https://github.com/ameliiams/Fostress.git
+```
+Install dependencies
+```
+python -m pip install -r fostress/Fostress/requirements.txt
+```
+And run the server
+```
+fostress/Fostress/site/manage.py migrate
+fostress/Fostress/site/manage.py runserver
+```
+
+## Screenshots
+
+![Signup Page](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-signup.gif?raw=true)
+![Login Page](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-login.gif?raw=true)
+![Example image post](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-imagepost.png?raw=true)
+![Example text post](https://github.com/ameliiams/Fostress/blob/main/screenshots/example-textpost.png?raw=true)
 
 
 ## To Do
