@@ -38,12 +38,12 @@ git clone https://github.com/ameliiams/Fostress.git
 ```
 Install dependencies
 ```
-python -m pip install -r fostress/Fostress/requirements.txt
+python3 -m pip install -r fostress/Fostress/requirements.txt
 ```
 And run the server
 ```
-fostress/Fostress/site/manage.py migrate
-fostress/Fostress/site/manage.py runserver
+python3 fostress/Fostress/site/manage.py migrate
+python3 fostress/Fostress/site/manage.py runserver
 ```
 
 ## Screenshots
