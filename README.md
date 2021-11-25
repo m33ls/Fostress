@@ -24,7 +24,7 @@ First, create a virtual environment
 ``` 
 # Unix / MacOS
 python3 -m venv fostress
-source fostress/Scripts/activate
+source fostress/bin/activate
 ```
 
 ``` 
