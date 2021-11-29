@@ -34,7 +34,7 @@ fostress/Scripts/activate.bat
 ```
 Then, clone the project repository
 ```
-git clone https://github.com/ameliiams/Fostress.git
+git clone https://github.com/ameliiams/Fostress.git ./fostress/Fostress
 ```
 Install dependencies
 ```
