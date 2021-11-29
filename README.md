@@ -41,8 +41,8 @@ python3 -m pip install -r requirements.txt
 ```
 And run the server
 ```
-python3 site/manage.py migrate
-python3 site/manage.py runserver
+python3 Site/manage.py migrate
+python3 Site/manage.py runserver
 ```
 
 ## Screenshots
