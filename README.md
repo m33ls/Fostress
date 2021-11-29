@@ -19,31 +19,30 @@ This app is based on Python with Django and SQLite.
 
 ## Get Started
 
-First, create a virtual environment 
-
+First, clone the project repository
+```
+git clone https://github.com/ameliiams/Fostress.git
+cd Fostress
+```
+Then, create a virtual environment
 ``` 
 # Unix / MacOS
-python3 -m venv fostress
-source fostress/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 ```
-
 ``` 
 # Windows
 python3 -m venv fostress
-fostress/Scripts/activate.bat
-```
-Then, clone the project repository
-```
-git clone https://github.com/ameliiams/Fostress.git ./fostress/Fostress
+venv/Scripts/activate.bat
 ```
 Install dependencies
 ```
-python3 -m pip install -r fostress/Fostress/requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 And run the server
 ```
-python3 fostress/Fostress/site/manage.py migrate
-python3 fostress/Fostress/site/manage.py runserver
+python3 site/manage.py migrate
+python3 site/manage.py runserver
 ```
 
 ## Screenshots
