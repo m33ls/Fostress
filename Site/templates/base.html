@@ -44,6 +44,11 @@
            outline: none; 
            border: none;
        }
+
+       .nav-btn {
+            margin: 5px; 
+            width: 80px;
+       }
     </style>
 
         <!-- Navigation -->
@@ -60,15 +65,15 @@
                         <li class="nav-item text-black">
                             <form action="{% url 'accounts:logout' %}" method="post">
                                 {% csrf_token %}
-                                <button class="btn btn-primary" type="submit" style="margin: 5px; width: 80px;">Log Out</button>
+                                <button class="btn btn-primary nav-btn" type="submit">Log Out</button>
                             </form>
                         </li>
                         {% else %}
                         <li class="nav-item text-black">
-                            <a class="btn btn-primary" href="/accounts/signup" style="margin: 5px; width: 80px;">Sign Up</a>
+                            <a class="btn btn-primary nav-btn" href="/accounts/signup">Sign Up</a>
                         </li>
                         <li class="nav-item text-black">
-                            <a class="btn btn-primary" href="/accounts/login" style="margin: 5px; width: 80px;">Log in</a>
+                            <a class="btn btn-primary nav-btn" href="/accounts/login">Log in</a>
                         </li>
                         {% endif %}
                     </ul>
