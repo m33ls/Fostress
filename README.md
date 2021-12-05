@@ -57,6 +57,7 @@ python3 Site/manage.py runserver
 - [ ] Add support for comments
 - [ ] Add user profile pictures
 - [ ] Add page for user settings
+- [ ] Two factor authentication
 
 ## License
 This project is licensed under the [Apache 2.0 License](https://github.com/ameliiams/Fostress/blob/main/LICENSE)

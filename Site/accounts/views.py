@@ -27,7 +27,18 @@ def login_view(request):
         form = LoginForm()
     return render(request, 'accounts/login.html', {'form': form})
 
-    
+
+def settings_view(request):
+    #if request.method == 'POST':
+    #    form = SignUpForm(request.POST)
+    #    if form.is_valid():
+    #        user = form.save()
+    #        login(request, user)
+    #        return redirect('/posts')
+    #else:
+    #    form = SignUpForm()
+    return render(request, 'accounts/settings.html') #, {'form': form})
+
 def logout_view(request):
     if request.method == 'POST':
         logout(request)
