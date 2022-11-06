@@ -8,14 +8,17 @@
 </a>
 </p>
 
-A free open-source social platform that was built with the goal of gaining a deeper understanding of the impact of social media on mental health. 
+An open-source social platform that was built with the goal of gaining a deeper understanding of the impact of social media on mental health. Created as a project for my finals.
 
 This app is based on Python with Django and SQLite. 
+
+** Contains a number of security issues and should not be used for any purpose other than demonstration
 
 ## Features
 * Easy setup
 * Supports user sign in & sign up
 * Support for both text and image posts
+* Posts all go to one timeline sorted by date
 
 ## Get Started
 
